@@ -7,6 +7,9 @@
   box-sizing: border-box;
   --main-font: "Roboto", sans-serif;
   --logo-font: "Permanent Marker", cursive;
+  --color-theme-1: #5588a3;
+  --color-theme-2: #145374;
+  --color-theme-3: #00334e;
 }
 
 body {
@@ -24,6 +27,7 @@ body {
 
 .left-container {
   background-image: url(./assets/thomas-tucker-QsiuD0w95h0-unsplash.jpg);
+  background-size: auto 900px;
   background-position: center;
 }
 
@@ -57,15 +61,23 @@ body {
   color: white;
 }
 
+.attribution-link:link {
+  color: white;
+}
+
+.attribution-link:visited {
+  color: white;
+}
+
 .right-container {
   display: flex;
   flex-direction: column;
 }
 
 .top-section {
-  background-color: #e8e8e8;
+  background-color: #f8f9fa;
   width: 100%;
-  height: 35%;
+  height: 30%;
   padding: 3%;
   font-size: 1.4rem;
   font-weight: 300;
@@ -79,11 +91,12 @@ body {
 }
 
 .mid-section {
-  background-color: #e8e8e8;
-  opacity: 0.5;
+  background-color: white;
+  opacity: 0.7;
   width: 100%;
-  height: 35%;
+  height: 40%;
   padding: 3%;
+  box-shadow: 5px 5px 5px var(--color-theme-1);
 }
 
 .sign-up-form {
@@ -95,22 +108,29 @@ body {
 }
 
 form p {
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 form label {
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 0.2rem;
 }
 
-form input {
+.input-box {
   width: 100%;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--color-theme-1);
+  border-radius: 2px;
+}
+
+.input-box:focus {
+  outline: 2px solid var(--color-theme-2);
+  box-shadow: 0 0 0 2px;
 }
 
 .bottom-section {
-  background-color: #e8e8e8;
+  background-color: #f8f9fa;
   width: 100%;
   height: 30%;
   padding: 3%;
@@ -119,10 +139,11 @@ form input {
 }
 
 .create-account-button {
-  width: 25%;
-  background-color: #00334e;
+  width: 220px;
+  background-color: var(--color-theme-3);
   color: white;
   padding: 16px 32px;
+  border: 3px solid var(--color-theme-1);
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
