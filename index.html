@@ -50,7 +50,7 @@
         </div>
         <div class="mid-section">
           <h2>Let's do this!</h2>
-          <form action="" class="sign-up-form">
+          <form action="#" method="get" id="sign-up-form">
             <p>
               <label for="first-name">First Name</label><br />
               <input
@@ -70,17 +70,28 @@
               />
             </p>
             <p>
-              <label for="email">Email</label><br />
-              <input type="text" id="email" name="email" class="input-box" />
+              <label for="user-email">Email</label><br />
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                class="input-box"
+              />
             </p>
             <p>
               <label for="phone">Phone Number</label><br />
-              <input type="text" id="phone" name="phone" class="input-box" />
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                class="input-box"
+                pattern="([0-9]){10,10}"
+              />
             </p>
             <p>
               <label for="password">Password</label><br />
               <input
-                type="text"
+                type="password"
                 id="password"
                 name="password"
                 class="input-box"
@@ -89,7 +100,7 @@
             <p>
               <label for="confirm-password">Confirm Password</label><br />
               <input
-                type="text"
+                type="password"
                 id="confirm-password"
                 name="confirm-password"
                 class="input-box"
@@ -98,8 +109,17 @@
           </form>
         </div>
         <div class="bottom-section">
-          <button class="create-account-button">Create Account</button>
-          <span>Already have an account? <a href="">Log In</a></span>
+          <button
+            form="sign-up-form"
+            type="submit"
+            class="create-account-button"
+          >
+            Create Account
+          </button>
+          <span
+            >Already have an account?
+            <a href="#" class="login-link">Log In</a></span
+          >
         </div>
       </div>
     </div>

@@ -99,7 +99,7 @@ body {
   box-shadow: 5px 5px 5px var(--color-theme-1);
 }
 
-.sign-up-form {
+#sign-up-form {
   width: max(440px, 80%);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -155,4 +155,11 @@ form label {
 .create-account-button:hover {
   cursor: pointer;
   opacity: 0.9;
+}
+
+.login-link:link,
+.login-link:visited {
+  color: var(--color-theme-3);
+  text-decoration: none;
+  font-weight: 700;
 }
