@@ -29,11 +29,13 @@ body {
   background-image: url(./assets/thomas-tucker-QsiuD0w95h0-unsplash.jpg);
   background-size: auto 900px;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo-banner {
-  position: relative;
-  top: 15%;
+  margin: 15% 0;
   width: 100%;
   height: auto;
   background-color: black;
@@ -56,9 +58,8 @@ body {
 
 #unsplash-attribution {
   text-align: center;
-  position: relative;
-  top: 85%;
   color: white;
+  margin: 2% 0;
 }
 
 .attribution-link:link {
