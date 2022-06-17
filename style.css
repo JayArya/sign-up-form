@@ -27,7 +27,7 @@ body {
 
 .left-container {
   background-image: url(./assets/thomas-tucker-QsiuD0w95h0-unsplash.jpg);
-  background-size: auto 900px;
+  background-size: 125%;
   background-position: center;
   display: flex;
   flex-direction: column;
